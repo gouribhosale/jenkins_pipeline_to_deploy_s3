@@ -1,0 +1,12 @@
+{
+    "Version": "2012-10-17", // Specifies the version
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject", // Unique identifier for the statement
+            "Effect": "Allow",  // Specify the effect (Allow/Deny)
+            "Principal": "*",  // Allow access to anyone
+            "Action": "s3:GetObject",  // Define the action allowed (GetObject)
+            "Resource": "arn:aws:s3:::jenkinstf-ec2-static-bucket/*"
+        }
+    ]
+}
